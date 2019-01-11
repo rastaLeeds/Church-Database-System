@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="churchDatabaseDataSet" targetNamespace="http://tempuri.org/churchDatabaseDataSet.xsd" xmlns:mstns="http://tempuri.org/churchDatabaseDataSet.xsd" xmlns="http://tempuri.org/churchDatabaseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="churchDatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="churchDatabaseConnectionString (Settings)" PropertyReference="ApplicationSettings.CMS_DEMO.Properties.Settings.GlobalReference.Default.churchDatabaseConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tblAssetsTableAdapter" GeneratorDataComponentClassName="tblAssetsTableAdapter" Name="tblAssets" UserDataComponentName="tblAssetsTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="churchDatabaseConnectionString (Settings)" DbObjectName="tblAssets" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT AssetDescription, AssetCat, Condition, Quantity, SerialNo, AssetHolder, AssetCenter, NewAssetOrderCode, Cost, OrderNo, DateOfPurchase, SupplierName, SupplierPrice, Adjustment, TransferedIn, TransferedOut, Additions, Disposal, DisposalDate, DisposalAmountRecieved FROM tblAssets</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="AssetDescription" DataSetColumn="AssetDescription" />
+              <Mapping SourceColumn="AssetCat" DataSetColumn="AssetCat" />
+              <Mapping SourceColumn="Condition" DataSetColumn="Condition" />
+              <Mapping SourceColumn="Quantity" DataSetColumn="Quantity" />
+              <Mapping SourceColumn="SerialNo" DataSetColumn="SerialNo" />
+              <Mapping SourceColumn="AssetHolder" DataSetColumn="AssetHolder" />
+              <Mapping SourceColumn="AssetCenter" DataSetColumn="AssetCenter" />
+              <Mapping SourceColumn="NewAssetOrderCode" DataSetColumn="NewAssetOrderCode" />
+              <Mapping SourceColumn="Cost" DataSetColumn="Cost" />
+              <Mapping SourceColumn="OrderNo" DataSetColumn="OrderNo" />
+              <Mapping SourceColumn="DateOfPurchase" DataSetColumn="DateOfPurchase" />
+              <Mapping SourceColumn="SupplierName" DataSetColumn="SupplierName" />
+              <Mapping SourceColumn="SupplierPrice" DataSetColumn="SupplierPrice" />
+              <Mapping SourceColumn="Adjustment" DataSetColumn="Adjustment" />
+              <Mapping SourceColumn="TransferedIn" DataSetColumn="TransferedIn" />
+              <Mapping SourceColumn="TransferedOut" DataSetColumn="TransferedOut" />
+              <Mapping SourceColumn="Additions" DataSetColumn="Additions" />
+              <Mapping SourceColumn="Disposal" DataSetColumn="Disposal" />
+              <Mapping SourceColumn="DisposalDate" DataSetColumn="DisposalDate" />
+              <Mapping SourceColumn="DisposalAmountRecieved" DataSetColumn="DisposalAmountRecieved" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="churchDatabaseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="churchDatabaseDataSet" msprop:Generator_UserDSName="churchDatabaseDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tblAssets" msprop:Generator_TableClassName="tblAssetsDataTable" msprop:Generator_TableVarName="tabletblAssets" msprop:Generator_TablePropName="tblAssets" msprop:Generator_RowDeletingName="tblAssetsRowDeleting" msprop:Generator_RowChangingName="tblAssetsRowChanging" msprop:Generator_RowEvHandlerName="tblAssetsRowChangeEventHandler" msprop:Generator_RowDeletedName="tblAssetsRowDeleted" msprop:Generator_UserTableName="tblAssets" msprop:Generator_RowChangedName="tblAssetsRowChanged" msprop:Generator_RowEvArgName="tblAssetsRowChangeEvent" msprop:Generator_RowClassName="tblAssetsRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="AssetDescription" msprop:Generator_ColumnVarNameInTable="columnAssetDescription" msprop:Generator_ColumnPropNameInRow="AssetDescription" msprop:Generator_ColumnPropNameInTable="AssetDescriptionColumn" msprop:Generator_UserColumnName="AssetDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AssetCat" msprop:Generator_ColumnVarNameInTable="columnAssetCat" msprop:Generator_ColumnPropNameInRow="AssetCat" msprop:Generator_ColumnPropNameInTable="AssetCatColumn" msprop:Generator_UserColumnName="AssetCat" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Condition" msprop:Generator_ColumnVarNameInTable="columnCondition" msprop:Generator_ColumnPropNameInRow="Condition" msprop:Generator_ColumnPropNameInTable="ConditionColumn" msprop:Generator_UserColumnName="Condition" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Quantity" msprop:Generator_ColumnVarNameInTable="columnQuantity" msprop:Generator_ColumnPropNameInRow="Quantity" msprop:Generator_ColumnPropNameInTable="QuantityColumn" msprop:Generator_UserColumnName="Quantity" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SerialNo" msprop:Generator_ColumnVarNameInTable="columnSerialNo" msprop:Generator_ColumnPropNameInRow="SerialNo" msprop:Generator_ColumnPropNameInTable="SerialNoColumn" msprop:Generator_UserColumnName="SerialNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AssetHolder" msprop:Generator_ColumnVarNameInTable="columnAssetHolder" msprop:Generator_ColumnPropNameInRow="AssetHolder" msprop:Generator_ColumnPropNameInTable="AssetHolderColumn" msprop:Generator_UserColumnName="AssetHolder" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AssetCenter" msprop:Generator_ColumnVarNameInTable="columnAssetCenter" msprop:Generator_ColumnPropNameInRow="AssetCenter" msprop:Generator_ColumnPropNameInTable="AssetCenterColumn" msprop:Generator_UserColumnName="AssetCenter" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NewAssetOrderCode" msprop:Generator_ColumnVarNameInTable="columnNewAssetOrderCode" msprop:Generator_ColumnPropNameInRow="NewAssetOrderCode" msprop:Generator_ColumnPropNameInTable="NewAssetOrderCodeColumn" msprop:Generator_UserColumnName="NewAssetOrderCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cost" msprop:Generator_ColumnVarNameInTable="columnCost" msprop:Generator_ColumnPropNameInRow="Cost" msprop:Generator_ColumnPropNameInTable="CostColumn" msprop:Generator_UserColumnName="Cost" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrderNo" msprop:Generator_ColumnVarNameInTable="columnOrderNo" msprop:Generator_ColumnPropNameInRow="OrderNo" msprop:Generator_ColumnPropNameInTable="OrderNoColumn" msprop:Generator_UserColumnName="OrderNo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DateOfPurchase" msprop:Generator_ColumnVarNameInTable="columnDateOfPurchase" msprop:Generator_ColumnPropNameInRow="DateOfPurchase" msprop:Generator_ColumnPropNameInTable="DateOfPurchaseColumn" msprop:Generator_UserColumnName="DateOfPurchase" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SupplierName" msprop:Generator_ColumnVarNameInTable="columnSupplierName" msprop:Generator_ColumnPropNameInRow="SupplierName" msprop:Generator_ColumnPropNameInTable="SupplierNameColumn" msprop:Generator_UserColumnName="SupplierName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SupplierPrice" msprop:Generator_ColumnVarNameInTable="columnSupplierPrice" msprop:Generator_ColumnPropNameInRow="SupplierPrice" msprop:Generator_ColumnPropNameInTable="SupplierPriceColumn" msprop:Generator_UserColumnName="SupplierPrice" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Adjustment" msprop:Generator_ColumnVarNameInTable="columnAdjustment" msprop:Generator_ColumnPropNameInRow="Adjustment" msprop:Generator_ColumnPropNameInTable="AdjustmentColumn" msprop:Generator_UserColumnName="Adjustment" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TransferedIn" msprop:Generator_ColumnVarNameInTable="columnTransferedIn" msprop:Generator_ColumnPropNameInRow="TransferedIn" msprop:Generator_ColumnPropNameInTable="TransferedInColumn" msprop:Generator_UserColumnName="TransferedIn" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TransferedOut" msprop:Generator_ColumnVarNameInTable="columnTransferedOut" msprop:Generator_ColumnPropNameInRow="TransferedOut" msprop:Generator_ColumnPropNameInTable="TransferedOutColumn" msprop:Generator_UserColumnName="TransferedOut" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Additions" msprop:Generator_ColumnVarNameInTable="columnAdditions" msprop:Generator_ColumnPropNameInRow="Additions" msprop:Generator_ColumnPropNameInTable="AdditionsColumn" msprop:Generator_UserColumnName="Additions" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Disposal" msprop:Generator_ColumnVarNameInTable="columnDisposal" msprop:Generator_ColumnPropNameInRow="Disposal" msprop:Generator_ColumnPropNameInTable="DisposalColumn" msprop:Generator_UserColumnName="Disposal" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DisposalDate" msprop:Generator_ColumnVarNameInTable="columnDisposalDate" msprop:Generator_ColumnPropNameInRow="DisposalDate" msprop:Generator_ColumnPropNameInTable="DisposalDateColumn" msprop:Generator_UserColumnName="DisposalDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DisposalAmountRecieved" msprop:Generator_ColumnVarNameInTable="columnDisposalAmountRecieved" msprop:Generator_ColumnPropNameInRow="DisposalAmountRecieved" msprop:Generator_ColumnPropNameInTable="DisposalAmountRecievedColumn" msprop:Generator_UserColumnName="DisposalAmountRecieved" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
